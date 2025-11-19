@@ -1,11 +1,99 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNow Magazine - Portada</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
   </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<body>
+
+    <div class="contenedor-revista">
+
+        <header class="cabecera">
+            <div class="logo">TechNow</div>
+            <nav class="menu-principal">
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Noticias</a></li>
+                    <li><a href="#">Opinión</a></li>
+                    <li><a href="#">Reviews</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="contenido-principal">
+            
+            <article class="noticia-destacada">
+                <figure class="media-noticia">
+                    <picture>
+                        <source srcset="https://images.unsplash.com/photo-1517430815124-749e793e2509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" type="image/webp">
+                        <img src="https://images.unsplash.com/photo-1517430815124-749e793e2509?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=80" alt="Hombre trabajando con IA en portátil">
+                    </picture>
+                    <div class="overlay-texto">
+                        <h2>La revolución de la IA generativa en el trabajo diario</h2>
+                        <p>Cómo las herramientas basadas en inteligencia artificial están cambiando la productividad.</p>
+                    </div>
+                </figure>
+            </article>
+
+            <section class="noticias-secundarias-stack">
+                <h3 class="seccion-titulo-stack">Novedades</h3>
+                <a href="#" class="enlace-noticia-stack">
+                    <h4>ChatGPT en educación</h4>
+                    <p>Los docentes debaten sus ventajas y riesgos.</p>
+                </a>
+                <a href="#" class="enlace-noticia-stack">
+                    <h4>El futuro del 6G</h4>
+                    <p>Velocidades que multiplicarán las del 5G.</p>
+                </a>
+                <a href="#" class="enlace-noticia-stack">
+                    <h4>Realidad aumentada</h4>
+                    <p>Apple y Meta apuestan por el metaverso productivo.</p>
+                </a>
+            </section>
+
+        </main>
+
+        <aside class="articulos-populares">
+            <h3>Artículos populares</h3>
+            <ul>
+                <li><a href="#">10 extensiones de VSCode imprescindibles</a></li>
+                <li><a href="#">Cómo mejorar tu productividad con Notion</a></li>
+                <li><a href="#">Lenguajes de programación más demandados</a></li>
+                <li><a href="#">Comparativa: portátiles para desarrollo</a></li>
+            </ul>
+        </aside>
+
+        <section class="articulos-inferiores">
+            <article class="articulo-tarjeta">
+                <figure><img src="https://images.unsplash.com/photo-1581092652195-2c8c49a37e1b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Mujer viendo un holograma" loading="lazy"></figure>
+                <h4>Robótica doméstica: ¿un lujo o una necesidad?</h4>
+                <p>La automatización llega a los hogares con robots más accesibles.</p>
+            </article>
+
+            <article class="articulo-tarjeta">
+                <figure><img src="https://images.unsplash.com/photo-1542838138-b78917e75e11?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Chip de ordenador" loading="lazy"></figure>
+                <h4>Chip M4 de Apple: potencia y eficiencia</h4>
+                <p>Los nuevos chips de 3nm prometen revolucionar el rendimiento.</p>
+            </article>
+
+            <article class="articulo-tarjeta">
+                <figure><img src="https://images.unsplash.com/photo-1518548232700-1b3c9b139987?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Placa base con luces" loading="lazy"></figure>
+                <h4>Criptomonedas 2025</h4>
+                <p>Bitcoin y Ethereum se estabilizan mientras surgen nuevas tendencias DeFi.</p>
+            </article>
+        </section>
+
+        <footer class="pie-pagina">
+            <p>© 2025 TechNow Magazine</p>
+            <nav class="menu-legal">
+                <a href="#">Aviso legal</a>
+                <a href="#">Privacidad</a>
+                <a href="#">Contacto</a>
+            </nav>
+        </footer>
+
+    </div> 
+</body>
 </html>
